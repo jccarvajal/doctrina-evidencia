@@ -1,0 +1,14 @@
+# Archivos de Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Carpetas de Editores de Código (Buena práctica)
+.vscode/
+.idea/
+
+# Archivos de Log o Temporales
+*.log
+*.tmp
+
+# Salida de MkDocs (NUEVO)
+site/

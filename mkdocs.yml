@@ -1,0 +1,108 @@
+site_name: Doctrina de la Evidencia
+site_url: https://evidencia.jccarvajal.com
+site_author: Juan Carlos Carvajal
+site_description: Auditoría Forense y Responsabilidad Operativa en la Era Digital
+copyright: Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+
+# Configuración del Tema (Material for MkDocs - Modo Institucional/Sobrio)
+theme:
+  name: material
+  language: es
+  logo: assets/images/portada-auditoria.png
+  favicon: assets/images/favicon.ico
+  palette: 
+    - scheme: default
+      primary: grey
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+# Extensiones (ACTIVACIÓN DE MERMAID & LATEX)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex: # Para fórmulas matemáticas (Matemática del Riesgo)
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+# Sección de Plugins  
+plugins:
+  - search
+
+# Mapa del Sitio (Estructura del Libro III)
+nav:
+  - Inicio: index.md
+  - Introducción:
+    - Nota al Lector: nota-al-lector.md
+    - Prólogo Ejecutivo: prologo.md
+    - Ideas Centrales: ideas-centrales.md
+  - 'Bloque 1: El Colapso de la Fe Administrativa':
+      - 'Capítulo 01: La Muerte de la Confianza Implícita': capitulos/01-Muerte-de-la-Confianza.md
+      - 'Capítulo 02: Auditabilidad por Diseño': capitulos/02-Auditabilidad-por-Diseno.md
+      - 'Capítulo 03: Las 3 Líneas de Defensa': capitulos/03-Tres-Lineas-de-Defensa.md
+  - 'Bloque 2: La Ficción y el Poder':
+      - 'Capítulo 04: La Cultura de la Simulación': capitulos/04-Cultura-de-la-Simulacion.md
+      - 'Capítulo 05: Identidad como Perímetro': capitulos/05-Identidad-como-Perimetro.md
+      - 'Capítulo 06: Privilegios y PAM': capitulos/06-Privilegios-y-PAM.md
+  - 'Bloque 3: La Ingeniería del Rastro':
+      - 'Capítulo 07: Segregación de Funciones': capitulos/07-Segregacion-de-Funciones.md
+      - 'Capítulo 08: Logs, Evidencia Inmutable': capitulos/08-Logs-Evidencia-Inmutable.md
+      - 'Capítulo 09: Auditoría de Configuración': capitulos/09-Auditoria-de-Configuracion.md
+  - 'Bloque 4: Verificación y Consecuencia':
+      - 'Capítulo 10: Auditoría de Comportamiento': capitulos/10-Auditoria-de-Comportamiento.md
+      - 'Capítulo 11: Red Teaming y Prueba Hostil': capitulos/11-Red-Teaming-y-Prueba-Hostil.md
+      - 'Capítulo 12: Régimen de Sanciones': capitulos/12-Regimen-de-Sanciones.md
+  - 'Bloque 5: La Ingeniería de la Certeza':
+      - 'Capítulo 13: CAPA: Cirugía de Causa Raíz': capitulos/13-Capa-Cirugia-de-Causa-Raiz.md
+      - 'Capítulo 14: Auditoría Continua': capitulos/14-Auditoria-Continua.md
+      - 'Capítulo 15: Compliance como Código': capitulos/15-Compliance-como-Codigo.md
+  - Conclusión:
+      - 'Epílogo: El Costo de la Certeza': epilogo.md
+  - Anexos Operativos:
+      - 'Anexo A: Plan Anual de Auditoría (PAT-100)': anexos/A-Plan-Auditoria-PAT100.md
+      - 'Anexo B: Estándar de Admisibilidad (Checklist)': anexos/B-Estandar-Admisibilidad-Evidencia.md
+      - 'Anexo C: Formato de Hallazgo Irrefutable': anexos/C-Formato-Hallazgo-Irrefutable.md
+      - 'Anexo D: Transferencia de Riesgo': anexos/D-Transferencia-Riesgo.md  
+  - Referencias:
+    - Glosario: referencias/Glosario.md
+    - Bibliografía: referencias/Bibliografia.md
+  - Acerca de:
+    - Autor: acerca/autor.md
+    - Licencia: acerca/licence.md
+    - Cómo Contribuir: acerca/contribuir.md
+    - Historial (Changelog): changelog.md

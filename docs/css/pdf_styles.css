@@ -1,0 +1,43 @@
+/* Estilos específicos para la versión Impresa/PDF */
+@media print {
+    /* Forzar salto de página en capítulos principales y secciones de control */
+    h1, h2, .guia-header {
+        page-break-before: always;
+        color: #1a237e; /* Azul institucional */
+    }
+
+    /* Evitar que las tablas de los 20 Pilares se corten a la mitad */
+    table {
+        page-break-inside: avoid;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9em;
+    }
+
+    th {
+        background-color: #f5f5f5 !important;
+        color: #333;
+    }
+
+    /* Estilo para los bloques de código (Prompts y Blueprints) */
+    pre, code {
+        background-color: #f8f9fa !important;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    /* Diseño de la Portada (si usas custom_template) */
+    .pdf-cover {
+        text-align: center;
+        padding-top: 50mm;
+    }
+
+    /* Pie de página con numeración (gestionado por el plugin) */
+    @page {
+        margin: 2cm;
+        @bottom-right {
+            content: "Página " counter(page);
+        }
+    }
+}
