@@ -6,6 +6,19 @@
 
 <img src="assets/images/portada-auditoria.png" alt="Portada del Libro - Doctrina de la Evidencia" width="500">
 
+--
+
+## 🎧 Versión Audio (Resumen / Podcast)
+
+Antes de leer, puedes comenzar por el audio:
+
+⏱️ **Duración:** 20 minutos  
+
+<audio controls>
+  <source src="assets/audio/doctrina-evidencia.m4a" type="audio/mp4">
+  Tu navegador no soporta audio.
+</audio>
+
 ---
 
 ## Descripción del Proyecto
