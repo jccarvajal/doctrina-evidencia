@@ -6,7 +6,7 @@
 
 <img src="assets/images/portada-auditoria.png" alt="Portada del Libro - Doctrina de la Evidencia" width="500">
 
---
+---
 
 ## 🎧 Versión Audio (Resumen / Podcast)
 
