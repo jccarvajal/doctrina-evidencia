@@ -39,6 +39,8 @@ El Plan Anual establece la siguiente regla innegociable para los equipos de audi
 
 Si un sistema no permite la extracción total de sus registros para ser validados mediante rutinas de auditoría continua, el sistema en sí mismo constituye un riesgo de caja negra y debe ser reportado como un hallazgo estructural, no operativo.
 
+En entornos de custodia delegada (SaaS, Cloud), confiar exclusivamente en las exportaciones periódicas provistas por el tercero no satisface el axioma de cobertura. Un PAT-100 sin mecanismos de reconciliación que verifiquen que la exportación incluye la totalidad de los eventos generados es, en la práctica, auditoría de muestreo delegada.
+
 ---
 
 ## 4. Resultado y Entregables del Plan
@@ -46,6 +48,14 @@ Si un sistema no permite la extracción total de sus registros para ser validado
 El Plan Anual de Auditoría bajo este modelo no produce un calendario de "visitas a terreno" ni entrevistas de validación. El plan se convierte en un *roadmap* de ingeniería de control y debe producir:
 
 1.  **Priorización de Dominios:** La secuencia en la que se integrarán los sistemas al motor de auditoría continua.
-2.  **Requerimiento de Artefactos:** La especificación técnica de las APIs, logs o repositorios que las áreas de TI deben exponer al equipo de auditoría.
-3.  **Scripts de Validación (Reglas):** El código (SQL, Python, Rego) que se ejecutará contra la población total para cada dominio priorizado.
+2.  **Requerimiento de Artefactos y Extracción Soberana:** La especificación técnica de las APIs de *streaming* o repositorios que las áreas de TI deben exponer, garantizando la extracción en tiempo real fuera del dominio del proveedor.
+3.  **Scripts de Traducción y Validación (Reglas):** El código (SQL, Python, Rego) que primero neutralizará cualquier "evidencia rehén" (convirtiéndola a formatos abiertos) y luego se ejecutará contra la población total para cada dominio priorizado.
 4.  **Dashboard Forense de Estado de Control:** El paso de un informe estático en PDF a una visualización de estado continuo basada en evidencia inmutable.
+
+---
+
+## 5. El Prerrequisito de Reconciliación en Custodia Delegada
+
+Como se establece en el **Anexo E (Custodia Delegada y Soberanía Probatoria)**, desplegar el PAT-100 sobre infraestructura de terceros exige una validación arquitectónica previa. 
+
+Antes de ejecutar las reglas de validación sobre la población de datos, el pipeline de auditoría debe ejecutar un control de integridad sobre la ingesta misma: el diferencial entre los eventos operacionales generados en el proveedor y los registros efectivamente capturados por la organización debe ser matemáticamente cero. Sin este paso de reconciliación, la "población total" es una ilusión garantizada únicamente por el contrato del proveedor, no por evidencia criptográfica.

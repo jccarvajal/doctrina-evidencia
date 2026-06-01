@@ -1,4 +1,4 @@
-# ANEXO E: CUSTODIA DELEGADA Y SOBERANÍA PROBATORIA
+# ANEXO E: Custodia Delegada y Soberanía Probatoria
 **La Cadena de Custodia como Arquitectura de Independencia**
 
 ## 1. El Supuesto que Este Anexo Destruye

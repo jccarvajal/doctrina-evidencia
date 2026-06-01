@@ -4,6 +4,16 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ---
 
+## [1.1.0] - 2026-05-31
+
+### Añadido
+* **Anexo E: Custodia Delegada y Soberanía Probatoria**. Se incorpora un nuevo anexo operativo y conceptual que desplaza el análisis de la cadena de custodia desde la simple integridad del registro hacia la independencia arquitectónica de la organización.
+
+### Modificado
+* Expansión de las implicancias del **PAT-100** (Anexo A) para entornos cloud y SaaS, estableciendo la reconciliación de ingesta y la extracción soberana como prerrequisitos para evitar la "auditoría de muestreo delegada".
+
+---
+
 ## [1.0.0] - 2026-03-08
 
 ### Lanzamiento Inicial: La Fiscalía Digital

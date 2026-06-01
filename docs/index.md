@@ -1,6 +1,6 @@
 # Doctrina de la Evidencia
 ## Auditoría Forense y Responsabilidad Operativa en la Era Digital
-**Versión 1.0 (Marzo 2026)**
+**Versión 1.1 (Mayo 2026)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -152,6 +152,8 @@ Estos anexos no son recomendaciones teóricas; son los artefactos de ejecución 
   *La anatomía de un hallazgo basado en consultas reproducibles que elimina la interpretación subjetiva.*
 * [Anexo D: Responsabilidad Legal y Transferencia de Riesgo](./anexos/D-Transferencia-Riesgo.md)
   *El Protocolo de Liberación: Cómo trasladar el riesgo técnico a la responsabilidad ejecutiva y patrimonial.*
+* [Anexo E: Custodia Delegada y Soberanía Probatoria](./anexos/E-Soberania-Probatoria.md)
+  *La evidencia como fenómeno arquitectónico: Cómo preservar la capacidad de reconstrucción independiente frente a la delegación tecnológica y la evidencia rehén.*
 
 ---
 
@@ -162,6 +164,7 @@ Estos anexos no son recomendaciones teóricas; son los artefactos de ejecución 
 ---
 
 ## Changelog
+* **v1.1 (Mayo 2026):** Incorporación del Anexo E (Custodia Delegada y Soberanía Probatoria) y actualización arquitectónica del Anexo A (PAT-100) para entornos de dependencia externa.
 * **v1.0 (Marzo 2026):** Consolidación de los 15 capítulos fundacionales, publicación de los 4 Anexos Operativos y establecimiento de la arquitectura de Compliance como Código.
 * Ver [Historial Completo](./changelog.md).
 
