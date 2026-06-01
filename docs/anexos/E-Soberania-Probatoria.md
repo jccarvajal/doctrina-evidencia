@@ -3,7 +3,7 @@
 
 ## 1. El Supuesto que Este Anexo Destruye
 
-La Doctrina de la Evidencia descansa sobre un principio técnico: la única verdad jurídica es el artefacto inmutable. El Capítulo 08 estableció las condiciones de ese artefacto —logs WORM, sincronización temporal verificable, cadena de custodia ininterrumpida.
+La Doctrina de la Evidencia descansa sobre un principio técnico: la única verdad jurídica es el artefacto inmutable. El Capítulo 08 estableció las condiciones de ese artefacto: logs WORM, sincronización temporal verificable, cadena de custodia ininterrumpida.
 
 Ese principio asume, implícitamente, que la organización posee el control físico y lógico de la infraestructura donde reside la evidencia.
 
