@@ -75,3 +75,5 @@ La cadena de custodia no es una propiedad estática del registro. Es una propied
 Bajo este marco, una organización puede acumular hashes, repositorios WORM, firmas digitales y sellos temporales, y aun así carecer de soberanía probatoria si depende de terceros para acceder a su evidencia, interpretarla o preservarla en el tiempo. Subcontratar la operación tecnológica es una decisión de eficiencia; subcontratar la capacidad de reconstruir la propia realidad operacional es una falla de gobernanza que inhabilita a la organización para defenderse.
 
 La soberanía probatoria no se delega, se diseña.
+
+> Este anexo complementa el Capítulo 08 (Logs, Evidencia Inmutable), el Capítulo 02 (Auditabilidad por Diseño), el Capítulo 14 (Auditoría Continua), el Anexo A (PAT-100) y el Anexo B (Estándar de Admisibilidad de Evidencia).
